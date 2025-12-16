@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	
+	<!-- script -->
+	<script src="../js/jquery-3.6.1.js"></script>	
+    <script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/libs/ScrollMagic.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/libs/swiper-bundle.min.js"></script>
+	<!-- slick js -->
+	<script src="../js/slick/slick.js"></script>
+	<script src="../js/slick/slick.min.js"></script>
+
+
+	<!-- css -->
+	 <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/basic.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/sub.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../css/tui-grid.css">
+  	<link rel="stylesheet" href="../css/tui-pagination.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel='stylesheet' href='../css/libs/jquery.mCustomScrollbar.min.css'>
+	<link rel='stylesheet' href='../css/libs/swiper-bundle.min.css'>
+
+    <title>ICS</title>
+</head>
+<body>
+	<div class="top__btn"><a href="#Main"><img src="../img/top_arrow.svg"></a></div>
+	<!-- HEADER -->
+	<!-- HEADER // -->
+
+
+	<div class="container">
+		<section class="sub-page-title-wrap">
+			<div class="s_visual">
+				<div  class="inner">
+					<div class="tit__area">
+						<h2>커뮤니티</h2>
+					</div>
+				</div>
+			</div>
+			<div class="sub-visual__nav">
+				<ul class="gnb">
+					<li><a href="#"><img src="../img/sub/icon_home.svg"></a></li>
+					<li class="menu menu-1">
+						<a href="#">커뮤니티<img src="../img/sub/icon_submenu.svg"></a>
+						<ul class="sub-menu">
+							<li><a href="#" data-target="guid">학교 안내</a></li>
+							<li><a href="#" data-target="admission">입학 안내</a></li>
+							<li><a href="#" data-target="academic">학사 안내</a></li>
+							<li><a href="#" data-target="department">학과 안내</a></li>
+							<li><a href="#" data-target="community">커뮤니티</a></li>
+							<li><a href="#" data-target="news">뉴스</a></li>
+						</ul>
+					</li>
+					<li class="menu menu-2">
+						<a href="#">오프라인 세미나<img src="../img/sub/icon_submenu.svg"></a>
+						<ul class="sub-menu">
+							<li><a href="../sub/게시판.html">오프라인 세미나</a></li>
+							<li><a href="../sub/게시판.html">서식자료실</a></li>
+							<li><a href="../sub/갤러리.html">갤러리</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="sub-page">
+			<div class="s__container">
+				<div class="s__row">
+					<div class="s_title">
+						<h2>오프라인 세미나</h2>
+					</div>
+					<div class="sp50"></div>
+
+					<div class="content scroll-spy">
+						<div class="list_viewPage">
+							<div class="inner">
+								<!-- 상단 제목 및 정보 -->
+								<div class="top">
+								<h2>등록금 분납 신청서 양식</h2>
+								<div class="info">
+									<span>관리자</span>
+									<span class="bar">|</span>
+									<span>2025.06.04</span>
+								</div>
+								</div>
+
+								<!-- 본문 영역 -->
+								<div class="edit">
+									<table class="table-common basic-01 consultant_form">
+										<colgroup>
+											<col style="width: 20%">
+											<col style="width: auto">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="row" data-label="CSS">표제</th>
+												<td>등록금 분할 신청서 양식
+												</td>
+											</tr>
+											<tr>
+												<th scope="row" data-label="CSS">지원 동기</th>
+												<td>
+													<div class="link__area">
+														<span class="link__item">
+															<img src="../img/sub/icon_file_link.svg">
+															<a href="#">등록금 분납 신청서.hwp</a>
+														</span>
+														<button class="btn-download">다운로드<img src="../img/sub/icon_download_bl.svg"></button>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<!-- 이전/다음 -->
+								<div class="post-navigation">
+								<div class="nav-item prev">
+									<span class="label">이전</span>
+									<a href="#">계절학기 신청서 양식</a>
+								</div>
+								<div class="nav-item next">
+									<span class="label">다음</span>
+									<a href="#">오프라인 세미나 불참사유서 양식</a>
+								</div>
+								</div>
+
+								<!-- 목록 버튼 -->
+								<div class="btn-wrap">
+								<button type="button">목록</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+
+		<!-- 하단 : start-->
+		<!-- 하단 : end-->
+	</div>
+
+	<script>
+
+		const menus = document.querySelectorAll('.gnb > li > a');
+			menus.forEach(menu => {
+			menu.addEventListener('click', function(e) {
+				e.preventDefault();
+
+				// 현재 클릭된 li
+				const parentLi = this.parentElement;
+				const submenu = this.nextElementSibling;
+
+				// 모든 메뉴 닫기
+				document.querySelectorAll('.sub-menu').forEach(sm => {
+				if (sm !== submenu) {
+					sm.classList.remove('active');
+				}
+				});
+
+				// 클릭한 메뉴 토글
+				if (submenu && submenu.classList.contains('sub-menu')) {
+				submenu.classList.toggle('active');
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+

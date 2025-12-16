@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	
+	<!-- script -->
+	<script src="../js/jquery-3.6.1.js"></script>	
+    <script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/libs/ScrollMagic.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/libs/swiper-bundle.min.js"></script>
+	<!-- slick js -->
+	<script src="../js/slick/slick.js"></script>
+	<script src="../js/slick/slick.min.js"></script>
+
+
+	<!-- css -->
+	 <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/basic.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/sub.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/board.css">
+	<link rel="stylesheet" href="../css/tui-grid.css">
+  	<link rel="stylesheet" href="../css/tui-pagination.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel='stylesheet' href='../css/libs/jquery.mCustomScrollbar.min.css'>
+	<link rel='stylesheet' href='../css/libs/swiper-bundle.min.css'>
+
+    <title>ICS</title>
+</head>
+<body>
+	<div class="top__btn"><a href="#Main"><img src="../img/top_arrow.svg"></a></div>
+	<!-- HEADER -->
+	<!-- HEADER // -->
+
+
+	<div class="container">
+		<section class="sub-page-title-wrap">
+			<div class="s_visual">
+				<div  class="inner">
+					<div class="tit__area">
+						<h2>뉴스</h2>
+					</div>
+				</div>
+			</div>
+			<div class="sub-visual__nav">
+				<ul class="gnb">
+					<li><a href="#"><img src="../img/sub/icon_home.svg"></a></li>
+					<li class="menu menu-1">
+						<a href="#">뉴스<img src="../img/sub/icon_submenu.svg"></a>
+						<ul class="sub-menu">
+							<li><a href="#" data-target="guid">학교 안내</a></li>
+							<li><a href="#" data-target="admission">입학 안내</a></li>
+							<li><a href="#" data-target="academic">학사 안내</a></li>
+							<li><a href="#" data-target="department">학과 안내</a></li>
+							<li><a href="#" data-target="community">커뮤니티</a></li>
+							<li><a href="#" data-target="news">뉴스</a></li>
+						</ul>
+					</li>
+					<li class="menu menu-2">
+						<a href="#">공지사항<img src="../img/sub/icon_submenu.svg"></a>
+						<ul class="sub-menu">
+							<li><a href="../sub/게시판.html">공지사항</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="sub-page">
+			<div class="s__container">
+				<div class="s__row">
+					<div class="s_title">
+						<h2>뉴스</h2>
+					</div>
+					<div class="sp50"></div>
+
+					<div class="content">
+						<div class="board01">
+							<form>
+								<div class="border-search01">
+									<select name="" id="">
+									<option value="">전체</option>
+									</select>
+									<input type="text">
+									<div class="search__btn">
+									<button class="btn-main">검색<i><img src="../img/sub/icon_search.svg"></i></button>
+									<button class="btn-gr">글쓰기</button>
+									</div>
+
+								</div>
+							</form>
+							<div id="grid"></div>
+							<a href="./게시판_보기.html">상세페이지로이동-->(테스트용)</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+
+		<!-- 하단 : start-->
+		<!-- 하단 : end-->
+	</div>
+
+	<script src="../js/libs/jquery-1.9.1.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/libs/tui-pagination.js"></script>
+	<script src="../js/libs/tui-grid.js"></script>
+	<script>
+		const dataSource = [
+			{
+				data1: '[2025년 5월 24일] 2025년 하계 원우수련회 및 전체학년 오프라인 세미나',
+				data2: '홍길동',
+				data3: '2025.06.04',
+				data4: '<img src="../img/sub/icon_link_file.svg" alt="아이콘">',
+				data5: '67'
+			},
+			{
+				data1: '기[2025년 4월 5일] 2025년 1학기 오프라인 세미나',
+				data2: '홍길동',
+				data3: '2025.06.04',
+				data4: '<img src="../img/sub/icon_link_file.svg" alt="아이콘">',
+				data5: '67'
+			},
+			{
+				data1: '[2025년 5월 24일] 2025년 하계 원우수련회 및 전체학년 오프라인 세미나',
+				data2: '홍길동',
+				data3: '2025.06.04',
+				data4: '<img src="../img/sub/icon_link_file.svg" alt="아이콘">',
+				data5: '67'
+			},
+			{
+				data1: '[2025년 4월 5일] 2025년 1학기 오프라인 세미나',
+				data2: '홍길동',
+				data3: '2025.06.04',
+				data4: '<img src="../img/sub/icon_link_file.svg" alt="아이콘">',
+				data5: '67'
+			},
+			];
+
+			const gridEl = document.getElementById("grid");
+
+			// 부모 요소 너비 가져오기
+			function getColumnsByPercent() {
+			const totalWidth = gridEl.offsetWidth;
+			return [
+					{
+						header: '제목',
+						name: 'data1',
+						align: 'left',
+						resizable: true,
+						width: totalWidth * 0.45, // 45%
+					},
+					{
+						header: '이름',
+						name: 'data2',
+						align: 'center',
+						resizable: true,
+						width: totalWidth * 0.15, // 15%
+					},
+					{
+						header: '등록일',
+						name: 'data3',
+						align: 'center',
+						resizable: true,
+						width: totalWidth * 0.15, // 15%
+					},
+					{
+						header: '첨부파일',
+						name: 'data4',
+						align: 'center',
+						resizable: true,
+						width: totalWidth * 0.086, // 8.6%
+					},
+					{
+						header: '조회수',
+						name: 'data5',
+						align: 'center',
+						resizable: true,
+						width: totalWidth * 0.10, // 10%
+					}
+				];
+			}
+
+			const grid = new tui.Grid({
+			el: gridEl,
+			data: dataSource,
+			scrollX: true,
+			scrollY: false,
+			minBodyHeight: 30,
+			rowHeaders: [
+				{
+				type: 'rowNum',
+				header: "번호",
+				width: 80,
+				}
+			],
+			pageOptions: {
+				useClient: true,
+				perPage: 10,
+			},
+			header: {
+				height: 70
+			},
+			minRowHeight: 71,
+			autoWidth: false, // 퍼센트 px 계산 적용을 위해 false
+			columns: getColumnsByPercent(),
+			});
+
+			// 브라우저 리사이즈 대응
+			window.addEventListener("resize", () => {
+			grid.setColumns(getColumnsByPercent());
+		});
+
+
+
+		const menus = document.querySelectorAll('.gnb > li > a');
+			menus.forEach(menu => {
+			menu.addEventListener('click', function(e) {
+				e.preventDefault();
+
+				// 현재 클릭된 li
+				const parentLi = this.parentElement;
+				const submenu = this.nextElementSibling;
+
+				// 모든 메뉴 닫기
+				document.querySelectorAll('.sub-menu').forEach(sm => {
+				if (sm !== submenu) {
+					sm.classList.remove('active');
+				}
+				});
+
+				// 클릭한 메뉴 토글
+				if (submenu && submenu.classList.contains('sub-menu')) {
+				submenu.classList.toggle('active');
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+

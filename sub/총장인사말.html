@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	
+	<!-- script -->
+	<script src="../js/jquery-3.6.1.js"></script>	
+    <script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/libs/ScrollMagic.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/libs/swiper-bundle.min.js"></script>
+	<!-- slick js -->
+	<script src="../js/slick/slick.js"></script>
+	<script src="../js/slick/slick.min.js"></script>
+
+
+	<!-- css -->
+	 <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/basic.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/sub.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel='stylesheet' href='../css/libs/jquery.mCustomScrollbar.min.css'>
+	<link rel='stylesheet' href='../css/libs/swiper-bundle.min.css'>
+
+    <title>ICS</title>
+</head>
+<body>
+	<div class="top__btn"><a href="#Main"><img src="../img/top_arrow.svg"></a></div>
+	<!-- 사이트맵 -->
+	<div id="siteMap" class="modal" role="dialog" aria-modal="true">
+		<div class="site-modal__wrap">
+			<div class="site-modal__inner">
+				<div class="site-modal__top">
+					<div class="modal_logo"><img src="../img/logo_bk.png"></div>
+					<button type="button" class="modal-btn--close close-btn"><img src="../img/icon_close.svg"><span class="sr-only">닫기 버튼</span></button>
+				</div>
+				<nav class="site-modal__gnb scroll">
+					<div class="modal__gnb_inner">
+						<div class="modal__visual"></div>
+						<ul class="depth_area modal_section01">
+							<li class="depth1">
+								<h2>학교안내</h2>
+								<ul class="depth2">
+									<li class=""><a href="#"><span>총장 인사말</span></a></li>
+									<li class=""><a href="#"><span>설립 철학 및 목적</span></a></li>
+									<li class=""><a href="#"><span>이사, 조직도</span></a></li>
+									<li class=""><a href="#"><span>오시는 길</span></a></li>
+								</ul>
+							</li>
+							<li class="depth1">
+								<h2>입학안내</h2>
+								<ul class="depth2">
+									<li class=""><a href="#"><span>모집요강</span></a></li>
+									<li class=""><a href="#"><span>원서접수</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="modal__gnb_inner">
+						<ul class="depth_area modal_section02">
+							<li class="depth1">
+								<h2>학사 안내</h2>
+								<ul class="depth2">
+									<li class=""><a href="#"><span>학사 제도</span></a></li>
+									<li class=""><a href="#"><span>학사 규정</span></a></li>
+									<li class=""><a href="#"><span>장학 규정</span></a></li>
+								</ul>
+							</li>
+							<li class="depth1">
+								<h2>학과 안내</h2>
+								<ul class="depth2">
+									<li class=""><a href="#"><span>목회 학과</span></a></li>
+									<li class=""><a href="#"><span>목회음악학과</span></a></li>
+									<li class=""><a href="#"><span>외래교수 소개</span></a></li>
+								</ul>
+							</li>
+							<li class="depth1">
+								<h2>커뮤니티</h2>
+								<ul class="depth2">
+									<li class=""><a href="#"><span>오프라인 세미나</span></a></li>
+									<li class=""><a href="#"><span>서식 자료실</span></a></li>
+									<li class=""><a href="#"><span>갤러리</span></a></li>
+								</ul>
+							</li>
+							<li class="depth1">
+								<h2>뉴스</h2>
+								<ul class="depth2">
+									<li class=""><a href="#"><span>공지사항</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- 사이트맵 //-->
+
+
+	<!-- HEADER -->
+	<header id="header" class="header sub">
+		<!-- GNB -->
+		<div class="header__gnb">
+			<div class="gnb_bg"></div>
+			<div class="header__gnb__wrap">
+				<h1 class="header__gnb__logo" title="메인으로 가기">
+					<a href='../index.html'><img src="../img/logo.svg" alt="ICS" /></a>
+				</h1>
+				<nav class="header__gnb__pc">
+					<ul class="header__gnb__menu">
+						<li>
+							<h2 class="depth1"><a href="../sub/총장인사말.html">학교안내</a></h2>
+							<div class="item">
+								<div class="inner">
+									<div class="header__gnb__left">
+										<span>학교안내</span>
+										<p>
+											인사말과 설립 철학 및 목적 등<br /> 전반적인 정보를 제공합니다.
+										</p>
+									</div>
+									<ul class="depth2">
+										<li><h3><a href="../sub/총장인사말.html">총장인사말</a></h3></li>
+										<li><h3><a href="../sub/설립철학및목적.html">설립 철학 및 목적</a></h3></li>
+										<li><h3><a href="../sub/조직도.html">이사, 조직도</a></h3></li>
+										<li><h3><a href="../sub/오시는길.html">오시는 길</a></h3></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h2 class="depth1"><a href="../sub/입학안내.html">입학안내</a></h2>
+							<div class="item">
+								<div class="inner">
+									<div class="header__gnb__left">
+										<span>입학안내</span>
+										<p>
+											모집요강과 원서접수 등록 등<br /> 입학 정보를 제공합니다.
+										</p>
+									</div>
+									<ul class="depth2">
+										<li><h3><a href="../sub/모집요강.html">모집 요강</a></h3></li>
+										<li><h3><a href="../sub/원서접수.html">원서접수</a></h3></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h2 class="depth1"><a href="../sub/학사제도.html">학사안내</a></h2>
+							<div class="item">
+								<div class="inner">
+									<div class="header__gnb__left">
+										<span>학사안내</span>
+										<p>
+											성적·졸업 요건, 학칙 등 <br />학업에 필요한 정보를 제공합니다.
+										</p>
+									</div>
+									<ul class="depth2">
+										<li><h3><a href="../sub/학사제도.html">학사 제도</a></h3></li>
+										<li><h3><a href="../sub/학사규정.html">학사 규정</a></h3></li>
+										<li><h3><a href="../sub/장학규정.html">장학 규정</a></h3></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h2 class="depth1"><a href="../sub/목회학과.html">학과 안내</a></h2>
+							<div class="item">
+								<div class="inner">
+									<div class="header__gnb__left">
+										<span>학과 안내</span>
+										<p>
+											목회·음악 사역자를 위한 <br />전문 교육 과정을 소개합니다.
+										</p>
+									</div>
+									<ul class="depth2">
+										<li><h3><a href="../sub/목회학과.html">목회학과</a></h3></li>
+										<li><h3><a href="../sub/목회음악학과.html">목회음악학과</a></h3></li>
+										<li><h3><a href="../sub/외래교수소개.html">외래교수 소개</a></h3></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h2 class="depth1"><a href="javascript:void(0)">커뮤니티</a></h2>
+							<div class="item">
+								<div class="inner">
+									<div class="header__gnb__left">
+										<span>커뮤니티</span>
+										<p>
+											재학생·졸업생·교수진이 온라인으로 <br />소통하고 교류할 수 있는 공간입니다.
+										</p>
+									</div>
+									<ul class="depth2">
+										<li><h3><a href="#">오프라인 세미나</a></h3></li>
+										<li><h3><a href="#">서식 자료실</a></h3></li>
+										<li><h3><a href="../sub/갤러리.html">갤러리</a></h3></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h2 class="depth1"><a href="../sub/게시판.html">뉴스</a></h2>
+							<div class="item">
+								<div class="inner">
+									<div class="header__gnb__left">
+										<span>뉴스</span>
+										<p>
+											학교 소식, 온라인 행사, 학사 공지 등 <br />최신 정보를 제공합니다.
+										</p>
+									</div>
+									<ul class="depth2">
+										<li><h3><a href="../sub/게시판.html">공지사항</a></h3></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h2 class="depth1"><a href="../sub/외래교수소개.html">교수·강사</a></h2>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__gnb__right">
+					<div class="btn--login_pc m_no">
+						<a href="../sub/login.html" id="btnLogin" class="login_btn m_no" data-modal-id="loginarea">로그인</a>
+						<div id="rangSelect" class="lang-select">
+							<div class="selected">KR</div>
+							<ul class="options">
+								<li data-value="kr">KR</li>
+								<li data-value="en">EN</li>
+							</ul>
+						</div>
+						<button id="btnSiteMap" class="modal-btn--open" data-modal-id="siteMap">
+							<div class=""><img id="menuIconImg" src="../img/sitemap.svg"></div>
+							<span class="sr-only">사이트맵 열기 버튼</span>
+						</button>
+					</div>
+
+					<button id="btnMobileMenu" class="m_show" data-modal-id="mobileMenu">
+						<svg viewBox="0 0 25.28 20.28">
+							<g id="Rectangle_5" data-name="Rectangle 5" class="cls-1">
+								<g id="Rectangle_5-2" data-name="Rectangle 5">
+									<rect class="cls-2" x="9.28" y="1.28" width="16" height="3"></rect>
+								</g>
+							</g>
+							<g id="Rectangle_5_copy" data-name="Rectangle 5 copy" class="cls-1">
+								<g id="Rectangle_5_copy-2" data-name="Rectangle 5 copy">
+									<rect class="cls-2" x=".28" y="9.28" width="25" height="3"></rect>
+								</g>
+							</g>
+							<g id="Rectangle_5_copy_2" data-name="Rectangle 5 copy 2" class="cls-1">
+								<g id="Rectangle_5_copy_2-2" data-name="Rectangle 5 copy 2">
+									<rect class="cls-2" x=".28" y="17.28" width="25" height="3"></rect>
+								</g>
+							</g>
+							<g id="Ellipse_5" data-name="Ellipse 5" class="cls-1">
+								<g id="Ellipse_5-2" data-name="Ellipse 5">
+									<path class="cls-2" d="M2.64,0C1.18,0,0,1.18,0,2.64s1.18,2.64,2.64,2.64,2.64-1.18,2.64-2.64S4.1,0,2.64,0Z"></path>
+								</g>
+							</g>
+						</svg>
+						<span class="sr-only">모바일 메뉴 열기 버튼</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- GNB // -->
+
+		<!-- 모바일 GNB -->
+		<div id="mobileMenu" class="modal">
+			<nav class="header__mo__menu">
+				<div class="header__mo__top">
+					<div class="inner">
+						<div class="header__gnb__logo">
+							<a href='/'><img src="./img/logo_bk.png" alt="i-DEA" /></a>
+						</div>
+						<button type="button" id="mobileMenuCloseBtn" class="modal-btn--close"><i class="close--i"></i><span class="sr-only">닫기 버튼</span></button>
+					</div>
+				</div>
+				<div class="header__mo__btm">
+					<ul class="header__mo__btn">
+						<li class="btn--login">
+							<a href="../sub/login.html"><i></i>로그인</a>
+						</li>
+						<!-- <li class="btn--join">
+							<a href="javascript:void(0)"><i></i>회원가입</a>
+						</li> -->
+					</ul>
+					<ul class="accordion header__mo__menu">
+						<li class="item">
+							<h2 class="depth1 accordion-header">
+								<a href="javascript:void(0)">학교안내<i class="arrow--i"></i></a>
+							</h2>
+							<ul class="depth2 accordion-body">
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/총장인사말.html">총장 인사말</a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/설립이념및교육목적.html">설립 철학 및 목적</a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/조직도.html">이사, 조직도</a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/오시는길.html">오시는 길<i class="link--i ml-10"></i></a></h3></li>
+							</ul>
+						</li>
+						<li class="item">
+							<h2 class="depth1 accordion-header">
+								<a href="javascript:void(0)">입학 안내<i class="arrow--i"></i></a>
+							</h2>
+							<ul class="depth2 accordion-body">
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/모집요강.html">모집요강 </a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/원서접수.html">원서 접수<i class="link--i ml-10"></i></a></h3></li>
+							</ul>
+						</li>
+						<li class="item">
+							<h2 class="depth1 accordion-header">
+								<a href="javascript:void(0)">학사 안내<i class="arrow--i"></i></a>
+							</h2>
+							<ul class="depth2 accordion-body">
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/학사제도.html">학사 제도 </a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/학사규정.html">학사 규정 </a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/장학규정.html">장학 규정<i class="link--i ml-10"></i></a></h3></li>
+							</ul>
+						</li>
+						<li class="item">
+							<h2 class="depth1 accordion-header">
+								<a href="javascript:void(0)">학과 안내<i class="arrow--i"></i></a>
+							</h2>
+							<ul class="depth2 accordion-body">
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/목회학과.html">목회학과</a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/목회음악학과.html">목회음악학과 </a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/외래교수소개.html">외래교수 소개<i class="link--i ml-10"></i></a></h3></li>
+							</ul>
+						</li>
+						<li class="item">
+							<h2 class="depth1 accordion-header">
+								<a href="javascript:void(0)">입학 안내<i class="arrow--i"></i></a>
+							</h2>
+							<ul class="depth2 accordion-body">
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/모집요강.html">모집요강</a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/원서접수.html">원서 접수<i class="link--i ml-10"></i></a></h3></li>
+							</ul>
+						</li>
+						<li class="item">
+							<h2 class="depth1 accordion-header">
+								<a href="javascript:void(0)">커뮤니티<i class="arrow--i"></i></a>
+							</h2>
+							<ul class="depth2 accordion-body">
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="">오프라인 세미나</a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="">서식 자료실</a></h3></li>
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/갤러리.html">갤러리<i class="link--i ml-10"></i></a></h3></li>
+							</ul>
+						</li>
+						<li class="item">
+							<h2 class="depth1 accordion-header">
+								<a href="javascript:void(0)">뉴스<i class="arrow--i"></i></a>
+							</h2>
+							<ul class="depth2 accordion-body">
+								<li class="inner-accordion"><h3 class="inner-accordion-header"><a href="../sub/게시판.html">공지사항<i class="link--i ml-10"></i></a></h3></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- 모바일 GNB //-->
+	</header>
+	<!-- HEADER // -->
+
+
+	<div class="container">
+		<section class="sub-page-title-wrap">
+			<div class="s_visual">
+				<div  class="inner">
+					<div class="tit__area">
+						<h2>학교 안내</h2>
+					</div>
+				</div>
+			</div>
+			<div class="sub-visual__nav">
+				<ul class="gnb">
+					<li><a href="#"><img src="../img/sub/icon_home.svg"></a></li>
+					<li class="menu menu-1">
+						<a href="#">학교 안내<img src="../img/sub/icon_submenu.svg"></a>
+						<ul class="sub-menu">
+							<li><a href="#" data-target="guid">학교 안내</a></li>
+							<li><a href="#" data-target="admission">입학 안내</a></li>
+							<li><a href="#" data-target="academic">학사 안내</a></li>
+							<li><a href="#" data-target="department">학과 안내</a></li>
+							<li><a href="#" data-target="community">커뮤니티</a></li>
+							<li><a href="#" data-target="news">뉴스</a></li>
+						</ul>
+					</li>
+					<li class="menu menu-2">
+						<a href="#">총장 인사말<img src="../img/sub/icon_submenu.svg"></a>
+						<ul class="sub-menu">
+							<li><a href="../sub/총장인사말.html">총장 인사말</a></li>
+							<li><a href="../sub/설립이념및교육목적.html">설립 철학 및 목적</a></li>
+							<li><a href="../sub/조직도.html">이사, 조직도</a></li>
+							<li><a href="../sub/오시는길.html">오시는 길</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="sub-page greeting__page">
+			<div class="s__container">
+				<div class="s__row">
+					<div class="s_title">
+						<h2>총장 인사말</h2>
+					</div>
+					<div class="sp50"></div>
+
+					<div class="content scroll-spy">
+						<p class="foreword-txt back-to-position to-top delay-0">어디서도 아직 실험해 보지 못한 사이버 신학대학원을 시작함에 있어 한 부분 동참해서 <span>한국교회의 잘 갖추어진 신학자들과 힘을 합해<br class="mo_none" />
+						각자 전공분야의 과목을 강의함으로서 신학교육의 높은 질적인 수준을 유지할 수 있는 신학훈련의 기회</span>를 드리려 합니다.</p>
+						<div class="flex gap5">
+							<div class="greeting-person back-to-position to-top delay-1">
+								<img src="../img/sub/greeting_img.png">
+								<span>
+									<p>사이버신학대학원장 총장</p>
+									<p class="ft_cafe24">남양우</p>
+								</span>
+							</div>
+							<div class="back-to-position to-top delay-2">
+								<img src="../img/sub/greeting_txt_img.png">
+								<div class="sp30"></div>
+								<p>
+									한국교회에는 신앙이 좋은 전문직업인들이 많이 있습니다.<br class="mo_none" />
+									또, 대학을 졸업하고 선교사의 소명을 받아 해외에 나가 사역을 하고 있는 분들도 역시 많습니다.<br class="mo_none" />
+									한국교회는 2030년까지 100만 명의 평신도선교사를 보내겠다는 선언을 했습니다.<br class="mo_none" />
+									그러나 직업과 여건들 때문에 교회에서 주말이나 전문적인 신학과 사역의 훈련을 받고 싶어도 받을 수 없어 늘 갈증을 느끼고 있습니다.<br class="mo_none" /><br class="mo_none" />
+
+									대학교수, 의사, 선생, 기업이나 관공서의 CEO들, 신학교에 낮에 나갈 수도 없고 밤에도 일을 해야 하는 경우 야간 신학교에도 갈 수 없고 야간 신학교에 잘못
+									가는 경우 질 높은 교육을 받을 수 없는 때가 있습니다.<br class="mo_none" /><br class="mo_none" />
+
+									이와 같은 특정 전문인들을 대상으로 신학교에나 가야 만날 수 있는 최고 수준의 교수들을 사이버신학대학원에서 만나 자기시간과 여건에 맞게 신학을 공부할 수 있는 길을 열어드리기 위해 국제사이버 신학대학원이 필요함을 알게 되었습니다.<br class="mo_none" /><br class="mo_none" />
+
+									어디서도 아직 실험해 보지 못한 사이버 신학대학원을 시작함에 있어 한 부분 동참해서 한국교회의 잘 갖추어진 신학자들과 높은 질적인 수준을 유지할 수
+									있는 신학훈련의 기회를 드리려합니다.<br class="mo_none" />
+									원하면서도 여건 때문에 정규신학수업을 할 수 없었던 분들이 이제는 ICS를 통해 제대로 공부 할 수 있게 되었습니다.<br class="mo_none" /><br class="mo_none" />
+
+									교회의 훈련으로 욕구를 만족시키지 못했던 분들이  ICS의 신학과정을 마음껏 이용할 수 있기를 바랍니다.<br class="mo_none" />
+									이런 프로그램을 통해 평신도들이 잘 훈련 받아 100만명 선교사 시대를 향해 함께 전진할 수 있을 것입니다.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+
+		<!-- 하단 : start-->
+		<footer class="footer">
+			<div class="f_top">
+				<ul>
+					<li><a href="#">ABOUT ICS</a></li>
+					<li><a href="#">학교 안내</a></li>
+					<li><a href="#">학사 안내</a></li>
+				</ul>
+			</div>
+			<div class="inner">
+				<div class="f_logo"><img src="../img/logo.svg"></div>
+				<div class="f_content">
+					<div class="left">
+						<div class="info">
+							<p>하나님과 교회 그리고 이웃을 섬기는 지도자</p>
+							<p>주소: 서울시 금천구 시흥동 122-5 금성빌딩 4층 ICS <span></span>전화: 02)747-0691<span></span>이메일: icseminary@icseminary.org</p>
+						</div>
+						<div class="copy">@ COPYRIGHT (C) 2021 ICS ALL RIGHTS RESERVED.</div>
+					</div>
+					<div class="right">
+						<img src="../img/bottom_img.png">
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- 하단 : end-->
+	</div>
+
+	<script>
+		// 스크롤 애니메이션
+		const controller = new ScrollMagic.Controller();
+		const spyEls = document.querySelectorAll('.scroll-spy');
+
+		spyEls.forEach(function (spyEl) {
+			new ScrollMagic.Scene({
+				triggerElement: spyEl,
+				triggerHook: 0.8, // 0.8로 값을 조정하여 애니메이션을 더 일찍 시작
+			})
+			.setClassToggle(spyEl, 'show')
+			.addTo(controller);
+		});
+
+		document.addEventListener("DOMContentLoaded", function () {
+		/** 헤더 스크롤 이벤트 **/
+			const header = document.querySelector(".header__gnb__wrap");
+			const logoImg = document.querySelector(".header__gnb__logo img");
+			const siteMap = document.querySelector("#menuIconImg");
+
+			window.addEventListener("scroll", function () {
+				if (window.scrollY > 0) {
+				header.classList.add("scrolled");
+				logoImg.setAttribute("src", "../img/logo_bk.png");
+				siteMap.setAttribute("src", "../img/sitemap_bk.svg");
+				} else {
+				header.classList.remove("scrolled");
+				logoImg.setAttribute("src", "../img/logo.svg");
+				siteMap.setAttribute("src", "../img/sitemap.svg");
+				}
+			});
+
+			/** 언어 선택 드롭다운 **/
+			const langSelect = document.querySelector("#rangSelect");
+			if (langSelect) {
+				const selected = langSelect.querySelector(".selected");
+				const options = langSelect.querySelectorAll(".options li");
+
+				if (selected) {
+				selected.addEventListener("click", () => {
+					langSelect.classList.toggle("open");
+				});
+				}
+
+				options.forEach(option => {
+					option.addEventListener("click", () => {
+						if (selected) {
+						selected.textContent = option.textContent;
+						}
+						langSelect.classList.remove("open");
+						console.log("선택된 언어:", option.dataset.value);
+					});
+				});
+
+				document.addEventListener("click", (e) => {
+					if (!langSelect.contains(e.target)) {
+						langSelect.classList.remove("open");
+					}
+				});
+			}
+		});
+
+
+
+		//모달창 - 공통 기능
+		var modalOpenBtns = document.querySelectorAll('.modal-btn--open');
+		var modalCloseBtns = document.querySelectorAll('.close-btn');
+
+		// 모달 열기
+		modalOpenBtns.forEach((btn) => {
+			btn.addEventListener('click', function (event) {
+				event.preventDefault();
+				const modalId = btn.getAttribute('data-modal-id');
+				const modal = document.getElementById(modalId);
+
+				// 스크롤 비활성화
+				document.documentElement.style.overflowY = 'hidden';
+				modal.classList.add('active');
+			});
+		});
+		// 모달 닫기
+		modalCloseBtns.forEach((btn) => {
+			btn.addEventListener('click', () => {
+				const modal = btn.closest('.modal');
+
+				// 스크롤 활성화
+				document.documentElement.style.overflowY = '';
+				modal.classList.remove('active');
+			});
+		});	
+
+
+		const menus = document.querySelectorAll('.gnb > li > a');
+			menus.forEach(menu => {
+			menu.addEventListener('click', function(e) {
+				e.preventDefault();
+
+				// 현재 클릭된 li
+				const parentLi = this.parentElement;
+				const submenu = this.nextElementSibling;
+
+				// 모든 메뉴 닫기
+				document.querySelectorAll('.sub-menu').forEach(sm => {
+				if (sm !== submenu) {
+					sm.classList.remove('active');
+				}
+				});
+
+				// 클릭한 메뉴 토글
+				if (submenu && submenu.classList.contains('sub-menu')) {
+				submenu.classList.toggle('active');
+				}
+			});
+		});
+
+		
+		
+	</script>
+</body>
+</html>
+

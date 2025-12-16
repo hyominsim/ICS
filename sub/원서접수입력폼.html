@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	
+	<!-- script -->
+	<script src="../js/jquery-3.6.1.js"></script>	
+    <script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/libs/ScrollMagic.min.js"></script>
+	<script src="../js/common.js"></script>
+	<script src="../js/libs/swiper-bundle.min.js"></script>
+	<!-- slick js -->
+	<script src="../js/slick/slick.js"></script>
+	<script src="../js/slick/slick.min.js"></script>
+
+
+	<!-- css -->
+	 <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/basic.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/sub.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel='stylesheet' href='../css/libs/jquery.mCustomScrollbar.min.css'>
+	<link rel='stylesheet' href='../css/libs/swiper-bundle.min.css'>
+
+    <title>ICS</title>
+</head>
+<body>
+	<div class="top__btn"><a href="#Main"><img src="../img/top_arrow.svg"></a></div>
+	<!-- HEADER -->
+	<!-- HEADER // -->
+
+
+	<div class="container">
+		<section class="sub-page-title-wrap">
+			<div class="s_visual">
+				<div  class="inner">
+					<div class="tit__area">
+						<h2>입학안내</h2>
+					</div>
+				</div>
+			</div>
+			<div class="sub-visual__nav">
+				<ul class="gnb">
+					<li><a href="#"><img src="../img/sub/icon_home.svg"></a></li>
+					<li class="menu menu-1">
+						<a href="#">입학 안내 <img src="../img/sub/icon_submenu.svg"></a>
+						<ul class="sub-menu">
+							<li><a href="#" data-target="guid">학교 안내</a></li>
+							<li><a href="#" data-target="admission">입학 안내</a></li>
+							<li><a href="#" data-target="academic">학사 안내</a></li>
+							<li><a href="#" data-target="department">학과 안내</a></li>
+							<li><a href="#" data-target="community">커뮤니티</a></li>
+							<li><a href="#" data-target="news">뉴스</a></li>
+						</ul>
+					</li>
+					<li class="menu menu-2">
+						<a href="#">원서 접수<img src="../img/sub/icon_submenu.svg"></a>
+						<ul class="sub-menu">
+							<li><a href="../sub/모집요강.html">모집 요강</a></li>
+							<li><a href="../sub/원서접수.html">원서 접수</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section class="sub-page">
+			<div class="s__container">
+				<div class="s__row">
+					<div class="s_title">
+						<h2>원서접수</h2>
+					</div>
+					<div class="sp50"></div>
+
+					<div class="content">
+						<div class="mb-70">
+							<div class="s_page__tit">
+								<div><span>01</span><h2>개인정보</h2></div>
+							</div>
+							<table class="table-common basic-01 consultant_form">
+								<caption>
+									CSS, 반응형 디자인, 레이아웃 항목별 순서대로 안내되는 표입니다.
+								</caption>
+								<colgroup>
+									<col style="width: 20%">
+									<col style="width: auto">
+									<col style="width: 20%">
+									<col style="width: auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" data-label="CSS">이름(한글)</th>
+										<td>
+											<input class="w-100" placeholder="이름을 입력해주세요.">
+										</td>
+										<th scope="row" data-label="CSS">성별</th>
+										<td>
+											<fieldset class="dp_flex gap30 input--radio__wrap" role="radiogroup">
+												<label><input type="radio" name="dateRange" value="today" checked><span>여성</span></label>
+												<label><input type="radio" name="dateRange" value="3days"><span>남성</span></label>
+											</fieldset>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" data-label="CSS">이름(한자)</th>
+										<td>
+											<input class="w-100" placeholder="이름(한자)을 입력해주세요.">
+										</td>
+										<th scope="row" data-label="CSS">이름(영어)</th>
+										<td>
+											<input class="w-100" placeholder="이름(영어)을 입력해주세요.">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" data-label="CSS">주민등록번호</th>
+										<td>
+											<input class="w-100" placeholder="공백, 하이픈(-) 생략">
+										</td>
+										<th scope="row" data-label="CSS">생년월일</th>
+										<td>
+											<input class="w-100" placeholder="공백, 하이픈(-) 생략">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" data-label="CSS">이메일</th>
+										<td>
+											<input class="w-100" placeholder="이메일을 입력해주세요.">
+										</td>
+										<th scope="row" data-label="CSS">휴대폰</th>
+										<td>
+											<input class="w-100" placeholder="공백, 하이픈(-) 생략">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">주소</th>
+										<td colspan="3">
+											<div class="flex-end">
+												<div class="tb__wrap">
+													<div class="tb_input__section">
+														<input class="w-40" type="text"> <button class="tbBtn col-bk">우편번호찾기</button><input type="text">
+													</div>
+													<div class="tb_input__section">
+														<input  type="text" placeholder="상세주소를 입력해주세요.">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									
+									<tr>
+										<th scope="row">사진</th>
+										<td colspan="3">
+											<div class="tb_input__section">
+												<input class="w-30" type="text">
+												<button class="tbBtn col-bk">파일찾기</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="mb-70">
+							<div class="s_page__tit">
+								<div><span>02</span><h2>학력 및 직장</h2></div>
+							</div>
+							<table class="table-common basic-01 consultant_form">
+								<caption>
+									CSS, 반응형 디자인, 레이아웃 항목별 순서대로 안내되는 표입니다.
+								</caption>
+								<colgroup>
+									<col style="width: 20%">
+									<col style="width: auto">
+									<col style="width: 20%">
+									<col style="width: auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" data-label="CSS">최종학력 입학일</th>
+										<td>
+											<input type="date" placeholder="시작 날짜 입력" class="w-100">
+										</td>
+										<th scope="row" data-label="CSS">최종학력 졸업일</th>
+										<td>
+											<input type="date" placeholder="시작 날짜 입력" class="w-100">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" data-label="CSS">최종학력 학교명</th>
+										<td>
+											<input class="w-100" placeholder="최종학력 학교명을 입력해주세요.">
+										</td>
+										<th scope="row" data-label="CSS">최종학력 전공</th>
+										<td>
+											<input class="w-100" placeholder="최종학력 전공을 입력해주세요.">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" data-label="CSS">직업 회사</th>
+										<td>
+											<input class="w-100" placeholder="공백, 하이픈(-) 생략">
+										</td>
+										<th scope="row" data-label="CSS">직무</th>
+										<td>
+											<input class="w-100" placeholder="공백, 하이픈(-) 생략">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">주소</th>
+										<td colspan="3">
+											<div class="flex-end">
+												<div class="tb__wrap">
+													<div class="tb_input__section">
+														<input class="w-40" type="text"> <button class="tbBtn col-bk">우편번호찾기</button><input type="text">
+													</div>
+													<div class="tb_input__section">
+														<input  type="text" placeholder="상세주소를 입력해주세요.">
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="mb-70">
+							<div class="s_page__tit">
+								<div><span>03</span><h2>지원</h2></div>
+							</div>
+							<table class="table-common basic-01 consultant_form">
+								<caption>
+									CSS, 반응형 디자인, 레이아웃 항목별 순서대로 안내되는 표입니다.
+								</caption>
+								<colgroup>
+									<col style="width: 20%">
+									<col style="width: auto">
+									<col style="width: 20%">
+									<col style="width: auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" data-label="CSS">입학 유형</th>
+										<td>
+											<fieldset class="dp_flex gap30 input--radio__wrap" role="radiogroup">
+												<label><input type="radio" name="dateRange" value="category1" checked><span>편입</span></label>
+												<label><input type="radio" name="dateRange" value="category2"><span>정규입학</span></label>
+												<label><input type="radio" name="dateRange" value="category3"><span>목사 프리미어 코스</span></label>
+											</fieldset>
+										</td>
+										<th scope="row" data-label="CSS">학과</th>
+										<td>
+											<select class="w-100">
+												<option>목회학과</option>
+												<option>목회음악학과</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="mb-70">
+							<div class="s_page__tit">
+								<div><span>04</span><h2>신앙생활</h2></div>
+							</div>
+							<table id="myTable" class="table-common basic-02 board_list tr-hover--none mt-0">
+								<colgroup>
+									<col style="width: 15%">
+									<col style="width: 20%">
+									<col style="width: 20%">
+									<col style="width: 17%">
+									<col style="width: 18%">
+									<col style="width: 10%">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">모집학과</th>
+										<th scope="col">모집인원</th>
+										<th scope="col">직분</th>
+										<th scope="col">교화</th>
+										<th scope="col">신양연수</th>
+										<th scope="col"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="row-1">
+										<td data-title="모집학과">
+											<input class="w-100" placeholder="모집학과">
+										</td>
+										<td data-title="모집인원">
+											<input class="w-100" placeholder="모집인원">
+										</td>
+										<td data-title="직분">
+											<select class="w-100">
+												<option>직분01</option>
+												<option>직분02</option>
+											</select>
+										</td>
+										<td data-title="교화">
+											<select class="w-100">
+												<option>교화01</option>
+												<option>교화02</option>
+											</select>
+										</td>
+										<td data-title="신양연수">
+											<input class="w-100" placeholder="신양연수">
+										</td>
+										<td data-title="add">
+											<button class="add_btn">+</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="mb-70">
+							<div class="s_page__tit">
+								<div><span>05</span><h2>지원 동기</h2></div>
+							</div>
+							<table class="table-common basic-01 consultant_form">
+								<caption>
+									CSS, 반응형 디자인, 레이아웃 항목별 순서대로 안내되는 표입니다.
+								</caption>
+								<colgroup>
+									<col style="width: 20%">
+									<col style="width: auto">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" data-label="CSS">지원 동기</th>
+										<td>
+											<select class="w-100">
+												<option>지원 동기를 선택해주세요.</option>
+												<option>동기01</option>
+												<option>동기02</option>
+											</select>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="page__btnWrap">
+							<a href="./원서접수.html" class="cancelBtn">취소</a>
+							<a href="" class="saveBtn">저장하기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+
+		<!-- 하단 : start-->
+		<!-- 하단 : end-->
+	</div>
+
+	<script>
+		// 스크롤 애니메이션
+		const spyEls = document.querySelectorAll('.scroll-spy');
+		const controller = new ScrollMagic.Controller();
+
+		spyEls.forEach(function (spyEl) {
+			new ScrollMagic.Scene({
+				triggerElement: spyEl,
+				triggerHook: 0.65,
+			})
+				.setClassToggle(spyEl, 'show')
+				.addTo(controller);
+		});
+
+
+		const menus = document.querySelectorAll('.gnb > li > a');
+			menus.forEach(menu => {
+			menu.addEventListener('click', function(e) {
+				e.preventDefault();
+
+				// 현재 클릭된 li
+				const parentLi = this.parentElement;
+				const submenu = this.nextElementSibling;
+
+				// 모든 메뉴 닫기
+				document.querySelectorAll('.sub-menu').forEach(sm => {
+				if (sm !== submenu) {
+					sm.classList.remove('active');
+				}
+				});
+
+				// 클릭한 메뉴 토글
+				if (submenu && submenu.classList.contains('sub-menu')) {
+				submenu.classList.toggle('active');
+				}
+			});
+		});
+
+
+		//신앙생활 테이블 tr 늘리기
+		let rowCount = 1;
+
+		function makeRowHtml(withRemove = true) {
+			const actionBtns = withRemove
+			? `<div class="flex gap1"><button class="add_btn">+</button> <button class="remove_btn">-</button></div>`
+			: `<button class="add_btn">+</button>`;
+
+			return `
+			<td data-title="모집학과">
+				<input class="w-100" placeholder="모집학과">
+			</td>
+			<td data-title="모집인원">
+				<input class="w-100" placeholder="모집인원">
+			</td>
+			<td data-title="직분">
+				<select class="w-100">
+				<option>직분01</option>
+				<option>직분02</option>
+				</select>
+			</td>
+			<td data-title="교화">
+				<select class="w-100">
+				<option>교화01</option>
+				<option>교화02</option>
+				</select>
+			</td>
+			<td data-title="신양연수">
+				<input class="w-100" placeholder="신양연수">
+			</td>
+			<td data-title="action">
+				${actionBtns}
+			</td>
+			`;
+		}
+
+		document.addEventListener('click', function (e) {
+			const target = e.target;
+
+			if (target && target.classList.contains('add_btn')) {
+			rowCount++;
+			const currentRow = target.closest('tr');
+			const newRow = document.createElement('tr');
+			newRow.id = `row-${rowCount}`;
+			newRow.innerHTML = makeRowHtml(true);
+
+			currentRow.insertAdjacentElement('afterend', newRow);
+
+			const firstInput = newRow.querySelector('input');
+			if (firstInput) firstInput.focus();
+			}
+
+			if (target && target.classList.contains('remove_btn')) {
+			const row = target.closest('tr');
+			if (row && row.id !== 'row-1') {
+				row.remove();
+			} else {
+				console.warn('첫 번째 행은 삭제할 수 없습니다.');
+			}
+			}
+		});
+
+	</script>
+</body>
+</html>
+

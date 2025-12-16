@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+	<!-- script -->
+	<script src="../js/jquery-3.6.1.js"></script>	
+	<!-- css -->
+	<link rel="stylesheet" href="../css/basic.css" type="text/css"/>
+	<link rel="stylesheet" href="../css/login.css" type="text/css"/>
+
+    <title>ICS</title>
+</head>
+<body>
+	<div class="login__area">
+		<div class="log_box">
+			<div class="visual__area">
+			</div>
+			<div class="input__area">
+				<div class="logo animation__img02"><img src="../img/sub/login_logo.png"></div>
+				<div class="inner">
+					<h2>로그인</h2>
+					<div class="btn-area">
+						<button class="active" data-role="student">학생</button>
+						<button data-role="professor">교수</button>
+						<button data-role="admin">관리자</button>
+					</div>
+					<div class="log_form">
+                        <div class="textb">
+                            <input type="text" required="">
+                            <div class="placeholder">아이디</div>
+                        </div>
+
+                        <div class="textb">
+                            <input type="password" required="">
+                            <div class="placeholder">패스워드</div>
+                            <div class="show-password fas fa-eye-slash"></div>
+                        </div>
+
+                        <div class="log_btn">
+                            <button onclick="location.href=''">LOGIN</button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="copy">@ COPYRIGHT (C) 2021 ICS ALL RIGHTS RESERVED.</div>
+	</div>
+
+	<script>
+		$(document).ready(function () {
+			let selectedRole = "student"; // 기본값: 학생
+
+			// 버튼 클릭 시 active 변경
+			$(".btn-area button").on("click", function () {
+				$(".btn-area button").removeClass("active"); // 기존 active 제거
+				$(this).addClass("active"); // 클릭된 버튼에 active 부여
+				selectedRole = $(this).data("role"); // data-role 값 가져오기
+				console.log("선택된 권한:", selectedRole);
+			});
+
+			// 로그인 버튼 클릭
+			$(".log_btn button").on("click", function (e) {
+				e.preventDefault();
+
+				let userId = $(".textb input[type='text']").val();
+				let password = $(".textb input[type='password']").val();
+
+				if (userId === "" || password === "") {
+				alert("아이디와 패스워드를 입력해주세요.");
+				return;
+				}
+
+				// 여기서 권한 + 로그인 요청 전송
+				// Ajax나 form submit으로 selectedRole을 함께 전달 가능
+				console.log("로그인 시도:", {
+				id: userId,
+				pw: password,
+				role: selectedRole
+				});
+
+				// 예시: 메인 페이지 이동
+				location.href = "../index/main.html?role=" + selectedRole;
+			});
+		});
+	</script>
+</body>
+</html>
+
